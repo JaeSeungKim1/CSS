@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multi Columns</title>
+    <style>
+        #orgin{
+            margin: 30px 0;/* top과 bottom의 값을 주겠다는 의미 */
+            column-count: 3;
+            column-rule-style: solid;/* 나눠지는 부분에 대한 선의 종류를 결정하는 방법 */
+            column-rule-color: skyblue;
+            column-rule-width: 5px;
+        }
+        #gap{
+            column-width: 100px;
+            column-gap: 70px;/* 컬럼 사이의 공간을 만들어주는 것 */
+            column-rule: 3px solid red;
+        }
+        #merge{column-span: all;} /* 컬럼과 분리시키고 싶을 때 사용하는 방법? */
+    </style>
+</head>
+<body>
+    <h1>컬럼 속성을 이용한 생성</h1>
+    <div id="orgin">
+        <h4>컬럼 생성</h4>
+        <p>
+            생각이 많은 건 말이야
+            당연히 해야 할 일이야
+            나에겐 우리가 지금 1순위야
+            안전한 유리병을 핑계로
+            바람을 가둬 둔 것 같지만
+            기억나? 그날의 우리가
+            잡았던 그 손엔 말이야
+            설레임보다 커다란 믿음이 담겨서
+            난 함박웃음을 지었지만
+            울음이 날 것도 같았어
+            소중한 건 언제나 두려움이니까
+            문을 열면 들리던 목소리
+            너로 인해 변해있던 따뜻한 공기
+            여전히 자신 없지만 안녕히
+            저기, 사라진 별의 자리
+            아스라이 하얀 빛
+            한동안은 꺼내 볼 수 있을 거야
+            아낌없이 반짝인 시간은
+            조금씩 옅어져 가더라도
+            너와 내 맘에 살아 숨 쉴 테니
+            여긴, 서로의 끝이 아닌... 펼쳐보기
+        </p>
+    </div>
+    <div id="gap">
+        <h4 id="merge">span으로 컬럼 병합</h4>
+        <p>
+            생각이 많은 건 말이야
+            당연히 해야 할 일이야
+            나에겐 우리가 지금 1순위야
+            안전한 유리병을 핑계로
+            바람을 가둬 둔 것 같지만
+            기억나? 그날의 우리가
+            잡았던 그 손엔 말이야
+            설레임보다 커다란 믿음이 담겨서
+            난 함박웃음을 지었지만
+            울음이 날 것도 같았어
+            소중한 건 언제나 두려움이니까
+            문을 열면 들리던 목소리
+            너로 인해 변해있던 따뜻한 공기
+            여전히 자신 없지만 안녕히
+            저기, 사라진 별의 자리
+            아스라이 하얀 빛
+            한동안은 꺼내 볼 수 있을 거야
+            아낌없이 반짝인 시간은
+            조금씩 옅어져 가더라도
+            너와 내 맘에 살아 숨 쉴 테니
+            여긴, 서로의 끝이 아닌... 펼쳐보기
+        </p>
+    </div>
+</body>
+</html>

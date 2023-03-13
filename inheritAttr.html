@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>global attr</title>
+</head>
+<style>
+    .wrapper{color: orange;} /* 상속된 자식들을 설정해서 글자값을 변하게 함 */
+    .wrapper p{color: purple;}
+    p.one{color: inherit;} /* 처음으로 상속받은 색깔을 사용 */
+    p.two{color:initial;} /* (<- 브루우져의 초기값(제일 처음에 넣었던 색) */
+    p.three{color: unset;} /* 상속받지 않은 것을 사용하겠다 */
+
+</style>
+<body>
+    <div class="wrapper">
+        <p class="one">상속</p>
+        <p class="two">초기값</p>
+        <p class="three">상속하지 않음</p>
+        <p>비설정 상태</p>
+    </div>
+</body>
+</html>
